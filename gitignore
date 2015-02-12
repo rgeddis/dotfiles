@@ -1,2 +1,4 @@
 # Compiled Python files
 *.pyc
+.tommorrow-theme
+backup/

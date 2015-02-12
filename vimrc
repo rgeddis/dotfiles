@@ -74,6 +74,9 @@ if &loadplugins
     Plugin 'mattn/gist-vim'
     let g:gist_post_private = 1
 
+    " Linter for python
+    Plugin 'nvie/vim-flake8'
+
     " Enable better vim EOL whitespace support
     Plugin 'ntpeters/vim-better-whitespace'
     call vundle#end()
@@ -103,7 +106,7 @@ nnoremap <CR> :noh<CR><CR>
 " Standard options
 set autowrite	          " Automatically save before commands like :next and :make
 set autoindent            " Match indentation of previous line
-set background=dark       " Dark backgrounds
+"set background=dark       " Dark backgrounds
 set backspace=indent,eol,start " Backspace through everything in insert mode
 set clipboard=unnamedplus " Attempt to use clipboardplus for cp
 set expandtab             " Use spaces, not tabs
@@ -141,11 +144,11 @@ set directory=/tmp/
 set nobackup
 set nofoldenable          " Don't fold by default
 set nowrap                " Don't wrap lines automatically
-set number                " Enable line numbers
 
-autocmd BufReadPre SConstruct set filetype=python
 autocmd BufReadPre SConscript set filetype=python
+autocmd BufReadPre SConstruct set filetype=python
 autocmd BufReadPre *.yaml, *.yml set filetype=yaml
+autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 
 au FileType python set autoindent
 au FileType python set textwidth=79 " PEP-8 Friendly

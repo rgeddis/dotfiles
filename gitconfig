@@ -8,8 +8,8 @@
 [apply]
     whitespace = fix
 [user]
-    name = Lee Skillen
-    email = lskillen@vulcanft.com
+    name = Ross Geddis
+    email = rgeddis@vulcanft.com
 [core]
     editor = vim
     whitespace = trailing-space, space-before-tab
@@ -27,10 +27,9 @@
     confirm = always
     smtpencryption = tls
     smtpserver = smtp.gmail.com
-    smtpuser = lskillen@vulcanft.com
+    smtpuser = rgeddis@vulcanft.com
     smtpserverport = 587
     smtpsslcertpath = /etc/ssl/certs/ca-bundle.trust.crt
     suppresscc = self
     attachcopy = true
     attachcopyencoding = base64
-
