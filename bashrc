@@ -117,6 +117,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias exportp='export WOMBAT_PATH=../config'
+alias exportld='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/work/mamablpapi/lib/debug/:~/work/blpapi_cpp_3.8.5.1/Linux'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

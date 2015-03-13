@@ -63,6 +63,11 @@ if &loadplugins
     map <Leader> <Plug>(easymotion-prefix)
     nmap s <Plug>(easymotion-s2)
 
+    Plugin 'Chiel92/vim-autoformat'
+    noremap <F3> :Autoformat<CR><CR>
+    let g:formatprg_args_cpp = "--mode=cs --style=ansi -pcHs4"
+
+
     " Full path fuzzy file, buffer, mru, tag
     " See: :help ctrlp-commands
     " See: :help ctrlp.txt
@@ -174,6 +179,9 @@ function s:StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call s:StripTrailingWhitespaces()
+
+execute "set colorcolumn=" . join(range(80,335), ',')
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " Source user local .vimrc
 if filereadable(glob("$HOME/.vimrc.local"))
