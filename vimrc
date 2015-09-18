@@ -102,10 +102,9 @@ if isdirectory(vundlehome) && &loadplugins
     map <leader> <Plug>(easymotion-prefix)
     nmap s <Plug>(easymotion-s2)
 
-    Plugin 'Chiel92/vim-autoformat'
-    noremap <F3> :Autoformat<CR><CR>
-    let g:formatprg_args_cpp = "--mode=cs --style=ansi -pcHs4"
+    Plugin 'Townk/vim-autoclose'
 
+    Plugin 'godlygeek/tabular'
 
     " Full path fuzzy file, buffer, mru, tag
     " See: :help ctrlp-commands
@@ -183,8 +182,8 @@ set showcmd               " Show (partial) command in status line.
 set showmatch             " Show matching brackets
 set showmatch             " Show matching parentheses
 set sidescrolloff=7       " Keep cursor <n> characters away from left/right
-set smartcase             " Do smart case matching
-set synmaxcol=120         " Only highlight syntax upto 120 characters
+set smartcase	          " Do smart case matching
+set synmaxcol=100         " Limit syntax highlighting to 100 columns
 set tabstop=4             " Tabs = 4 spaces
 set t_Co=256              " Set terminal to 256 colours
 set title                 " Set the terminals title
