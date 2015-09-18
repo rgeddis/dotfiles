@@ -1,2 +1,4 @@
-flake8==2.4.0
-pylint==1.4.3
+flake8
+pip
+powerline-status
+pylint
