@@ -1,8 +1,10 @@
 aptitude
 cmake
 dconf-cli
+direnv
 exuberant-ctags
 python-dev
 python-pip
 tmux
 vim-gnome
+xclip
