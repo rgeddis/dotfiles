@@ -117,6 +117,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias kit='bundle exec kitchen'
 alias exportp='export WOMBAT_PATH=../config'
 alias exportld='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/work/mamablpapi/lib/debug/:~/work/blpapi_cpp_3.8.5.1/Linux'
 
@@ -144,6 +145,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+eval "$(direnv hook bash)"
 
 set -o vi
 
@@ -196,3 +199,5 @@ if [[ -d '/opt/chefdk' ]]; then
 fi
 
 which chef &>/dev/null && eval "$(chef shell-init bash)"
+export DISPLAY=:0
+export CHEF_KEY="/home/rgeddis/.chef/rgeddis.pem"

@@ -8,8 +8,8 @@
 [apply]
     whitespace = fix
 [user]
-    name = Ross Geddis
-    email = rgeddis@vulcanft.com
+	name = Ross Geddis
+	email = rgeddis@cloudsmith.io
 [core]
     editor = vim
     whitespace = trailing-space, space-before-tab
@@ -21,7 +21,10 @@
     signoff = true
     coverletter = auto
     keepsubject = true
+[pull]
+    rebase = true
 [push]
+    followtags = true
     default = simple
 [sendemail]
     confirm = always
@@ -33,3 +36,5 @@
     suppresscc = self
     attachcopy = true
     attachcopyencoding = base64
+[pull]
+	rebase = true
