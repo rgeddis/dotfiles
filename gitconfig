@@ -9,14 +9,14 @@
     whitespace = fix
 [user]
 	name = Ross Geddis
-	email = rgeddis@cloudsmith.io
+	email = ross.geddis@cardinalanalytics.co
 [core]
     editor = vim
     whitespace = trailing-space, space-before-tab
 [merge]
     tool = kdiff3
 [format]
-    headers = "Organization: Vulcan Financial Technologies\n"
+    headers = "Organization: Cardinal Analytics\n"
     numbered = auto
     signoff = true
     coverletter = auto
@@ -33,7 +33,7 @@
     confirm = always
     smtpencryption = tls
     smtpserver = smtp.gmail.com
-    smtpuser = rgeddis@vulcanft.com
+    smtpuser = ross.geddis@cardinalanalytics.co
     smtpserverport = 587
     smtpsslcertpath = /etc/ssl/certs/ca-bundle.trust.crt
     suppresscc = self
